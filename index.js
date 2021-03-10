@@ -12,8 +12,6 @@ const spinner = ora('Loading...')
 
 let word = process.argv.slice(2).join(' ') // 获取命令行输入的参数
 
-word = noCase.noCase(word)
-
 if (!word) {
   spinner.fail(chalk.red('Please enter text'))
   process.exit() // Stop the process
@@ -21,6 +19,7 @@ if (!word) {
 console.log(word)
 
 const isCh = isChinese(word)
+word = isCh ? word : noCase.noCase(word)
 const url = () => {
   return isCh ? 'https://dict.youdao.com/w/eng/' : 'https://dict.youdao.com/w/'
 }
