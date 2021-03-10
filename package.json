@@ -1,0 +1,30 @@
+{
+  "name": "yd-translation",
+  "version": "0.0.5",
+  "description": "just translate",
+  "main": "index.js",
+  "bin": {
+    "yd": "index.js"
+  },
+  "keywords": [
+    "youdao",
+    "tran",
+    "translate",
+    "translation",
+    "yd-translation"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "is-chinese": "^1.2.9",
+    "no-case": "^3.0.4",
+    "ora": "^5.3.0",
+    "request": "^2.88.2",
+    "urlencode": "^1.1.0"
+  }
+}
