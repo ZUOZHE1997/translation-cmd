@@ -1,23 +1,24 @@
 {
-  "name": "yd-translation",
-  "version": "0.0.5",
-  "description": "just translate",
+  "name": "translation-cmd",
+  "version": "0.1.1",
+  "description": "",
   "main": "index.js",
   "bin": {
     "yd": "index.js"
   },
-  "keywords": [
-    "youdao",
-    "tran",
-    "translate",
-    "translation",
-    "yd-translation"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZUOZHE1997/translation-cmd.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZUOZHE1997/translation-cmd/issues"
+  },
+  "homepage": "https://github.com/ZUOZHE1997/translation-cmd#readme",
   "dependencies": {
     "chalk": "^4.1.0",
     "cheerio": "^1.0.0-rc.5",

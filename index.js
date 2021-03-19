@@ -3,6 +3,7 @@
 const chalk = require('chalk')
 const ora = require('ora')
 const request = require('request')
+// const https = require("https")
 const isChinese = require('is-chinese')
 const urlencode = require('urlencode')
 const noCase = require('no-case')
@@ -29,6 +30,31 @@ const option = {
 }
 
 spinner.start()
+
+//  const req = https.request(option.url,res=>{
+//   spinner.stop()
+
+//   const $ = cheerio.load(res)
+//   let result = $('#phrsListTab > .trans-container > ul')
+//     .text()
+//     .replace(/\s+/g, '')
+
+//   if (!result) {
+//     // console.log(
+//     //   $('#ydTrans > #fanyiToggle > .trans-container > p:nth-child(2)').text()
+//     // )
+//     result = $(
+//       '#ydTrans > #fanyiToggle > .trans-container > p:nth-child(2)'
+//     ).text()
+//   }
+//   console.log(chalk.green(result))
+//  })
+
+// req.on('error',()=>{
+//   spinner.fail(chalk.red('ERROR'))
+// })
+// req.end()
+
 
 request(option.url, (error, response, body) => {
   if (error) {
